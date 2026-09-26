@@ -1542,3 +1542,43 @@ body {
 .hero-buttons {
   justify-content: center;
 }
+/* your existing CSS */
+/* ...all your current styles... */
+
+
+/* =========================
+   BOOKING SECTION
+========================= */
+
+#booking {
+  padding: 90px 8%;
+  background: #f8f6f1;
+  text-align: center;
+}
+
+#booking h2 {
+  font-size: 38px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+#booking p {
+  font-size: 17px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #booking {
+    padding: 70px 25px;
+  }
+
+  #booking h2 {
+    font-size: 30px;
+  }
+
+  #booking p {
+    font-size: 15px;
+  }
+}

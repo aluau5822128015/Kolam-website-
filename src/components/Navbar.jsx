@@ -17,6 +17,7 @@ function Navbar() {
         <a href="#amenities">Amenities</a>
         <a href="#gallery">Gallery</a>
         <a href="#location">Location</a>
+        <a href="#booking">Book Now</a>
       </div>
 
     </nav>

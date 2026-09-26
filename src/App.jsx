@@ -6,6 +6,7 @@ import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Location from "./components/Location";
 import Contact from "./components/Contact";
+import Booking from "./components/Booking";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Gallery />
       <Location />
+      <Booking/>
       <Contact />
     </>
   );

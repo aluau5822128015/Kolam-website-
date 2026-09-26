@@ -1582,3 +1582,46 @@ body {
     font-size: 15px;
   }
 }
+/* =========================
+   BOOKING FORM
+========================= */
+
+#booking form {
+  max-width: 700px;
+  margin: 40px auto 0;
+  display: grid;
+  gap: 18px;
+}
+
+#booking input,
+#booking select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+#booking input:focus,
+#booking select:focus {
+  outline: none;
+  border-color: #b8860b;
+}
+
+#booking button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #b8860b;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#booking button:hover {
+  background: #9c7209;
+}

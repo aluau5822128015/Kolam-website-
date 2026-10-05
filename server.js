@@ -1,25 +1,35 @@
 const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
+
+const connectDB = require("./config/db");
+const bookingRoutes = require("./routes/bookingRoutes");
+
+dotenv.config();
 
 const app = express();
 
+// Connect to MongoDB
+connectDB();
+
+// Middleware
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
+
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
-
+// Root route
 app.get("/", (req, res) => {
   res.send("Kolam backend is running!");
 });
 
-app.post("/api/bookings", (req, res) => {
-  const booking = req.body;
+// Booking routes
+app.use("/api/bookings", bookingRoutes);
 
-  console.log("New booking received:", booking);
-
-  res.status(201).json({
-    message: "Booking request received successfully!",
-    booking: booking,
-  });
-});
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Kolam backend running on port ${PORT}`);
